@@ -1,29 +1,37 @@
 version: "3"
 services:
     golang:
+        container_name: golang
         image: golang:latest
         volumes:
             - ./golang:/workspace
         working_dir: /workspace
+        hostname: golang
         command: bash -c "while sleep 1000; do :; done"
 
     python:
+        container_name: python
         image: python:latest
         volumes:
             - ./python:/workspace
         working_dir: /workspace
+        hostname: python
         command: bash -c "while sleep 1000; do :; done"
 
     node:
+        container_name: node
         image: node:latest
         volumes:
             - ./node:/workspace
         working_dir: /workspace
+        hostname: node
         command: bash -c "while sleep 1000; do :; done"
 
     php:
+        container_name: php
         image: php:latest
         volumes:
             - ./php:/workspace
         working_dir: /workspace
+        hostname: php
         command: bash -c "while sleep 1000; do :; done"
