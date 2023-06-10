@@ -1,0 +1,6 @@
+{
+    "name": "Your Container Name",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "Golang",
+    "workspaceFolder": "/workspace"
+}

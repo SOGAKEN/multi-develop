@@ -1,0 +1,29 @@
+version: "3"
+services:
+    golang:
+        image: golang:latest
+        volumes:
+            - ./golang:/workspace
+        working_dir: /workspace
+        command: bash -c "while sleep 1000; do :; done"
+
+    python:
+        image: python:latest
+        volumes:
+            - ./python:/workspace
+        working_dir: /workspace
+        command: bash -c "while sleep 1000; do :; done"
+
+    node:
+        image: node:latest
+        volumes:
+            - ./node:/workspace
+        working_dir: /workspace
+        command: bash -c "while sleep 1000; do :; done"
+
+    php:
+        image: php:latest
+        volumes:
+            - ./php:/workspace
+        working_dir: /workspace
+        command: bash -c "while sleep 1000; do :; done"
